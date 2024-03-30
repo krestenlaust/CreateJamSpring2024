@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
   m_Name: Buffy We have spoken a couple of times in the potion shop
   m_EditorClassIdentifier: 
+  whoSaidIt: {fileID: 11400000, guid: 2f8cd2488fa7fba4fadc850f5cfa6619, type: 2}
   statement: Well, we have spoken a couple of times in the potion shop.
