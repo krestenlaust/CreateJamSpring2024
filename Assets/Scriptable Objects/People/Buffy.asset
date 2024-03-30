@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Buffy
   avatar: {fileID: -7153429573562006373, guid: 4176c76b9d6850849b5f333ce11754a7, type: 3}
   background: {fileID: 0}
-  textColor: {r: 0.4716981, g: 0, b: 0, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.7924528, g: 0.1981132, b: 0.1981132, a: 1}
   convos:
   - {fileID: 11400000, guid: 376d7c7e16a5c61488c8ee37553ac7b7, type: 2}

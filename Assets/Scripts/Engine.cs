@@ -35,7 +35,9 @@ public class Engine : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI timerTMP;
 
-    private void Awake()
+	[SerializeField] TextMeshProUGUI middleTextTMP;
+
+	private void Awake()
     {
         if (MakeSingleton())
         {
@@ -81,10 +83,18 @@ public class Engine : MonoBehaviour
         crossReferenceMenu.UpdateButtons();
     }
 
-    public void OpenCrossReferenceConversation(Person person) => 
-        crossReferenceMenu.OpenMenu(person);
+	public void OpenCrossReferenceConversation(Person person)
+	{
+		crossReferenceMenu.OpenMenu(person);
+        FixNamesInMiddleBoxyThing();
+	}
 
-    public void OpenFirstAvailableCrossReference() =>
+	private void FixNamesInMiddleBoxyThing()
+	{
+        middleTextTMP.text = $"Ask {InvestigatedPerson.name} about {CrossReferencePerson.name}'s statements.";
+	}
+
+	public void OpenFirstAvailableCrossReference() =>
         crossReferenceMenu.OpenOnFirstAvailable();
 
     public void CrossReferenceStatementClicked(GameObjectStatement statement) => 
