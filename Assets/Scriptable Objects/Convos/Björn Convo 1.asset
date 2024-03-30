@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
+  m_Name: "Bj\xF6rn Convo 1"
+  m_EditorClassIdentifier: 
+  inputs:
+  - {fileID: 11400000, guid: 5b66c2813fa983846a2634b28e070262, type: 2}
+  outputs:
+  - {fileID: 11400000, guid: 1582d04bc1b38ce4ba2573ee76d00672, type: 2}
+  - {fileID: 11400000, guid: c6199745718b41444b05f61bf6a73076, type: 2}
+  - {fileID: 11400000, guid: 950deaaded2b1344a897097d3d345778, type: 2}
