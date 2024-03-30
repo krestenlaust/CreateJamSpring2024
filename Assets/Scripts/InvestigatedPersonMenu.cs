@@ -43,7 +43,7 @@ public class InvestigatedPersonMenu : MonoBehaviour
     public void UpdateOpened()
     {
         InstantiateRecording();
-        ScrollToBottom();
+        StartCoroutine(ScrollToBottom());
     }
 
     private void InstantiateRecording()
@@ -66,8 +66,9 @@ public class InvestigatedPersonMenu : MonoBehaviour
         }
     }
 
-    private void ScrollToBottom()
+    private IEnumerator ScrollToBottom()
     {
+        yield return null;
         scrollRect.normalizedPosition = new Vector2(0, 0);
     }
 }

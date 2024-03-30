@@ -509,7 +509,7 @@ MonoBehaviour:
   personNameBackgroundImage: {fileID: 3658107292143217101}
   personAvatar: {fileID: 3115364140467798957}
   personBackground: {fileID: 2124942435531283800}
-  scrollRect: {fileID: 0}
+  scrollRect: {fileID: 8021429727152328517}
   scrollAreaContent: {fileID: 6755072917488703552}
   person: {fileID: 0}
 --- !u!1 &8211056474741843859

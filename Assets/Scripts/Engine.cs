@@ -93,6 +93,7 @@ public class Engine : MonoBehaviour
         }
 
         UpdateTimer();
+        investigatedPersonMenu.UpdateOpened();
     }
 
     private void UpdateTimer()

@@ -15,8 +15,8 @@ MonoBehaviour:
   name: Joanna
   avatar: {fileID: 0}
   background: {fileID: 0}
-  textColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  backgroundColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
   convos: []
   noAnswerStatements: []
   startingConvo: {fileID: 0}

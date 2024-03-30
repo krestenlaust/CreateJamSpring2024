@@ -33,6 +33,10 @@ public class GameObjectStatement : MonoBehaviour
         {
             button.onClick.AddListener(() => Engine.CrossReferenceStatementClicked(this));
         }
+        else
+        {
+            button.enabled = false;
+        }
     }
 
     

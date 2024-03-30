@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class CrossReferenceMenu : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI personNameTMP;
+    [SerializeField] Image personNameBackgroundImage;
+
     [SerializeField] CreateCrossReferenceButtons createCrossReferenceButtons;
     [SerializeField] Transform scrollAreaContent;
 
@@ -18,6 +21,10 @@ public class CrossReferenceMenu : MonoBehaviour
     public void OpenMenu(Person personToOpenWith)
     {
         person = personToOpenWith;
+
+        personNameTMP.text = person.name;
+        personNameTMP.color = person.textColor;
+        personNameBackgroundImage.color = person.backgroundColor;
 
         InstantiateRecording();
 
