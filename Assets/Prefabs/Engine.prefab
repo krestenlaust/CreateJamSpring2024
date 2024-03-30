@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4585708258835786728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5328285156453988274}
+  - component: {fileID: 3334478193153959988}
+  m_Layer: 0
+  m_Name: Engine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5328285156453988274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585708258835786728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 418.7446, y: 211.98349, z: -0.21329574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3334478193153959988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585708258835786728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f3c2cd1e6046f479ed0417db342c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingMinutes: 120
+  newInfoCostInMinutes: 5
+  minutesLeft: 0
+  people:
+  - {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
+  - {fileID: 11400000, guid: 2f8cd2488fa7fba4fadc850f5cfa6619, type: 2}
+  - {fileID: 11400000, guid: 884e47c7900bba94abc55e9ed7f1a269, type: 2}
+  - {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
+  crossReferenceMenu: {fileID: 0}
+  investigatedPersonMenu: {fileID: 0}
+  askConfirmationMenu: {fileID: 0}
+  askedStatementPrefab: {fileID: 2224317623996703542, guid: 9b13807affa1249468321e7c23c0ac08, type: 3}
+  answeredStatementPrefab: {fileID: 8465756617324730786, guid: 6825171bddd6f274bb49520fc7d5505d, type: 3}
+  timerTMP: {fileID: 0}

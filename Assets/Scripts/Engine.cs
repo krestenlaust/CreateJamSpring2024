@@ -43,8 +43,8 @@ public class Engine : MonoBehaviour
             minutesLeft = startingMinutes;
             UpdateTimer();
 
-            OpenInvestigateConversation(people[0]);
-            OpenCrossReferenceConversation(people[1]);
+            OpenInvestigateConversation(people[2]);
+            OpenCrossReferenceConversation(people[0]);
         }
     }
 
