@@ -4,13 +4,17 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CrossReferenceMenu : MonoBehaviour
+public class InvestigatedPersonMenu : MonoBehaviour
 {
-    [SerializeField] CreateCrossReferenceButtons createCrossReferenceButtons;
+    [SerializeField] TextMeshProUGUI personNameTMP;
+    [SerializeField] Image personNameBackgroundImage;
+
+    [SerializeField] Image personAvatar;
+
     [SerializeField] Transform scrollAreaContent;
 
     [SerializeField, ReadOnly] Person person;
-    public Person Person => person;
+    public Person InvestigatedPerson => person;
 
     Engine Engine => Engine.instance;
 
@@ -18,11 +22,13 @@ public class CrossReferenceMenu : MonoBehaviour
     {
         person = personToOpenWith;
 
+        personNameTMP.text = person.name;
+        personNameTMP.color = person.textColor;
+        personNameBackgroundImage.color = person.backgroundColor;
+
+        personAvatar.sprite = person.avatar;
+
         InstantiateRecording();
-
-        createCrossReferenceButtons.UpdateButtons(person);
-
-
     }
 
     private void InstantiateRecording()
@@ -44,7 +50,4 @@ public class CrossReferenceMenu : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
-
-    public void UpdateButtons() => 
-        createCrossReferenceButtons.UpdateButtons(person);
 }
