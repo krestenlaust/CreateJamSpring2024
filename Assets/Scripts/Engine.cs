@@ -18,6 +18,8 @@ public class Engine : MonoBehaviour
     [SerializeField] InvestigatedPersonMenu investigatedPersonMenu;
     public Person InvestigatedPerson => investigatedPersonMenu.InvestigatedPerson;
 
+    [SerializeField] AskConfirmationMenu askConfirmationMenu;
+
     [SerializeField] GameObject askedStatementPrefab;
     public GameObject AskedStatementPrefab => askedStatementPrefab;
     [SerializeField] GameObject answeredStatementPrefab;
@@ -62,4 +64,12 @@ public class Engine : MonoBehaviour
 
     public void OpenFirstAvailableCrossReference() =>
         crossReferenceMenu.OpenOnFirstAvailable();
+
+    public void CrossReferenceStatementClicked(GameObjectStatement statement) => 
+        askConfirmationMenu.OpenMenu(statement);
+
+    public void Ask(ScriptableStatement statement)
+    {
+        InvestigatedPerson.AskStatement(statement);
+    }
 }

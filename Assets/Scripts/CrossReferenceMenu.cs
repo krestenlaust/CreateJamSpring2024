@@ -32,7 +32,7 @@ public class CrossReferenceMenu : MonoBehaviour
             GameObject prefab = statement is AskedStatement ? Engine.AskedStatementPrefab : Engine.AnsweredStatementPrefab;
 
             GameObject gameObjectStatement = Instantiate(prefab, scrollAreaContent);
-            gameObjectStatement.GetComponent<GameObjectStatement>().InstantiatedInit(statement, person);
+            gameObjectStatement.GetComponent<GameObjectStatement>().InstantiatedInit(statement, person, crossReference: true);
         }
     }
 
