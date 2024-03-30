@@ -17,3 +17,5 @@ MonoBehaviour:
   textColor: {r: 0, g: 0.4811321, b: 0.09826004, a: 1}
   backgroundColor: {r: 0.24870951, g: 0.764151, b: 0.35347405, a: 1}
   convos: []
+  noAnswerStatements: []
+  startingConvo: {fileID: 11400000, guid: dc9fbec40dc0bc747b50900222f58cc1, type: 2}

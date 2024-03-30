@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: "Bj\xF6rn Convo 1"
+  m_Name: Willow List Convo
   m_EditorClassIdentifier: 
   inputs:
   - {fileID: 11400000, guid: 5b66c2813fa983846a2634b28e070262, type: 2}
   outputs:
-  - {fileID: 11400000, guid: 1582d04bc1b38ce4ba2573ee76d00672, type: 2}
-  - {fileID: 11400000, guid: c6199745718b41444b05f61bf6a73076, type: 2}
-  - {fileID: 11400000, guid: 950deaaded2b1344a897097d3d345778, type: 2}
+  - {fileID: 11400000, guid: 6c5df937ce1517c43a7fe80f95fb3d99, type: 2}
+  - {fileID: 11400000, guid: f37a19a9664ef7242ac23877cac7b477, type: 2}
