@@ -124,6 +124,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8478893384289177893, guid: e8bfec5a8cd6b9741ada2510a84e45bc, type: 3}
   m_PrefabInstance: {fileID: 5218279667467628764}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &357052029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454278915057287913, guid: e8bfec5a8cd6b9741ada2510a84e45bc, type: 3}
+  m_PrefabInstance: {fileID: 5218279667467628764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147a5c08afdf55a48a5d9cdec51ea196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &429907283 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4078412350522495286, guid: 3fd90b16f9bbfdb45a4ae88ddb505d03, type: 3}
@@ -456,7 +467,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
   crossReferenceMenu: {fileID: 968830867}
   investigatedPersonMenu: {fileID: 429907284}
-  askConfirmationMenu: {fileID: 0}
+  askConfirmationMenu: {fileID: 357052029}
   askedStatementPrefab: {fileID: 2224317623996703542, guid: 9b13807affa1249468321e7c23c0ac08, type: 3}
   answeredStatementPrefab: {fileID: 8465756617324730786, guid: 6825171bddd6f274bb49520fc7d5505d, type: 3}
 --- !u!4 &2057192964
