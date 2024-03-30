@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
-  m_Name: "Bj\xF6rn Liste Statement 2"
+  m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
+  m_Name: "Willow Bj\xF6rn moved here 5 weeks ago"
   m_EditorClassIdentifier: 
-  statement: I don't really know anybody, besides Willow.
+  inputs:
+  - {fileID: 11400000, guid: 1582d04bc1b38ce4ba2573ee76d00672, type: 2}
+  outputs:
+  - {fileID: 11400000, guid: b22331c516d0b2849b0137b913842f1b, type: 2}
