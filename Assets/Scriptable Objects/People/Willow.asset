@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Willow
   avatar: {fileID: 5545978771003637547, guid: dcdc1da205fb8e044a427a297c364dab, type: 3}
   background: {fileID: -3719163014518916081, guid: ca8a70d63c46da746bf1ab4cd2d00e79, type: 3}
-  textColor: {r: 0.30946234, g: 0, b: 0.41509432, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.7015154, g: 0.3250267, b: 0.8301887, a: 1}
   convos:
   - {fileID: 11400000, guid: 19a905f62eb45db41b0b91253550e531, type: 2}

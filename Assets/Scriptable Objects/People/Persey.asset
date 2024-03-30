@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Persey
   avatar: {fileID: -8327617359119570925, guid: 320af952286025b4dadad40200094341, type: 3}
   background: {fileID: 0}
-  textColor: {r: 0, g: 0.124679945, b: 0.46226418, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.23718406, g: 0.38264865, b: 0.7735849, a: 1}
   convos:
   - {fileID: 11400000, guid: 04b4d3be56786fa43934ea1757c0956e, type: 2}
