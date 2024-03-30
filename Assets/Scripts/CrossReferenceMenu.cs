@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,9 +21,7 @@ public class CrossReferenceMenu : MonoBehaviour
 
         InstantiateRecording();
 
-        createCrossReferenceButtons.UpdateButtons(person);
-
-
+        UpdateButtons();
     }
 
     private void InstantiateRecording()
@@ -45,6 +44,26 @@ public class CrossReferenceMenu : MonoBehaviour
         }
     }
 
-    public void UpdateButtons() => 
+    public void OpenOnFirstAvailable()
+    {
+        foreach (Person person in Engine.People)
+        {
+            if (person != Engine.InvestigatedPerson)
+            {
+                OpenMenu(person);
+                return;
+            }
+        }
+    }
+
+    public void UpdateButtons()
+    {
+        if (Engine.InvestigatedPerson == person)
+        {
+            Engine.OpenFirstAvailableCrossReference();
+            return;
+        }
+
         createCrossReferenceButtons.UpdateButtons(person);
+    }
 }

@@ -12,9 +12,9 @@ public class Person : ScriptableObject
     public Color backgroundColor;
     public List<Convo> convos;
 
-    public List<ScriptableStatement> noAnswerStatements;
+    public List<ScriptableStatement> noAnswerStatements = new();
 
-    [ReadOnly] List<Statement> recording;
+    [ReadOnly] List<Statement> recording = new();
     public List<Statement> Recoroding => recording;
 
     public List<ScriptableStatement> AskStatement(ScriptableStatement asked)

@@ -51,4 +51,7 @@ public class Engine : MonoBehaviour
 
     public void OpenCrossReferenceConversation(Person person) => 
         crossReferenceMenu.OpenMenu(person);
+
+    public void OpenFirstAvailableCrossReference() =>
+        crossReferenceMenu.OpenOnFirstAvailable();
 }

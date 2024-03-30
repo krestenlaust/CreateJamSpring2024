@@ -9,11 +9,13 @@ public class ScriptableStatement : ScriptableObject
     [TextArea(10, 100)] public string statement;
 }
 
+[System.Serializable]
 public abstract class Statement
 {
     public ScriptableStatement statement;
 }
 
+[System.Serializable]
 public class AskedStatement : Statement
 {    
     public AskedStatement(ScriptableStatement statement)
@@ -22,6 +24,7 @@ public class AskedStatement : Statement
     }
 }
 
+[System.Serializable]
 public class AnsweredStatement : Statement
 {
     public AnsweredStatement(ScriptableStatement statement)
