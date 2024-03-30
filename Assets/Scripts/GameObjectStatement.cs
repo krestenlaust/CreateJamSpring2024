@@ -25,7 +25,7 @@ public class GameObjectStatement : MonoBehaviour
         this.statement = statement;
 
         Color colorMultiplier = new(1, 1, 1);
-        if (Engine.InvestigatedPerson.ExistsInRecording(statement.statement))
+        if (crossReference && Engine.InvestigatedPerson.ExistsInRecording(statement.statement))
         {
             colorMultiplier = askedColor;
         }
@@ -45,6 +45,19 @@ public class GameObjectStatement : MonoBehaviour
         {
             button.enabled = false;
         }
+    }
+
+    public void UpdateColorMultiplier(bool crossReference)
+    {
+        if (crossReference && Engine.InvestigatedPerson.ExistsInRecording(statement.statement))
+        {
+            nameTMP.color = statement.statement.WhoSaidIt.textColor * askedColor;
+
+            statementTMP.color = statement.statement.WhoSaidIt.textColor * askedColor;
+            backgroundImage.color = statement.statement.WhoSaidIt.backgroundColor * askedColor;
+        }
+
+
     }
 
     

@@ -130,6 +130,7 @@ MonoBehaviour:
   statementTMP: {fileID: 5874923338998156578}
   nameTMP: {fileID: 7179382065634273912}
   backgroundImage: {fileID: 3020299056662849888}
+  askedColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
   button: {fileID: 1160203694101425327}
 --- !u!114 &1160203694101425327
 MonoBehaviour:

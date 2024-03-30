@@ -13,6 +13,8 @@ public class CrossReferenceMenu : MonoBehaviour
     [SerializeField] CreateCrossReferenceButtons createCrossReferenceButtons;
     [SerializeField] Transform scrollAreaContent;
 
+    [SerializeField] List<GameObjectStatement> statements;
+
     [SerializeField, ReadOnly] Person person;
     public Person Person => person;
 
@@ -34,12 +36,15 @@ public class CrossReferenceMenu : MonoBehaviour
     private void InstantiateRecording()
     {
         DestroyContentChildren();
+        statements.Clear();
         foreach (Statement statement in person.Recoroding)
         {
             GameObject prefab = statement is AskedStatement ? Engine.AskedStatementPrefab : Engine.AnsweredStatementPrefab;
 
-            GameObject gameObjectStatement = Instantiate(prefab, scrollAreaContent);
-            gameObjectStatement.GetComponent<GameObjectStatement>().InstantiatedInit(statement, crossReference: true);
+            GameObject instantiatedStatement = Instantiate(prefab, scrollAreaContent);
+            GameObjectStatement gameObjectStatement = instantiatedStatement.GetComponent<GameObjectStatement>();
+            gameObjectStatement.InstantiatedInit(statement, crossReference: true);
+            statements.Add(gameObjectStatement);
         }
     }
 
@@ -60,6 +65,14 @@ public class CrossReferenceMenu : MonoBehaviour
                 OpenMenu(person);
                 return;
             }
+        }
+    }
+
+    public void UpdateColorMultipliers()
+    {
+        foreach (GameObjectStatement gameObjectStatement in statements)
+        {
+            gameObjectStatement.UpdateColorMultiplier(crossReference: true);
         }
     }
 
