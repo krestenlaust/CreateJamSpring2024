@@ -7,6 +7,7 @@ using UnityEngine;
 public class ScriptableStatement : ScriptableObject
 {
     [SerializeField] Person whoSaidIt;
+    public Person WhoSaidIt => whoSaidIt;
     [TextArea(10, 100)] public string statement;
 }
 

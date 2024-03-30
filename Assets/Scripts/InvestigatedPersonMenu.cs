@@ -12,6 +12,7 @@ public class InvestigatedPersonMenu : MonoBehaviour
     [SerializeField] Image personAvatar;
     [SerializeField] Image personBackground;
 
+    [SerializeField] ScrollRect scrollRect;
     [SerializeField] Transform scrollAreaContent;
 
     [SerializeField, ReadOnly] Person person;
@@ -39,6 +40,12 @@ public class InvestigatedPersonMenu : MonoBehaviour
         InstantiateRecording();
     }
 
+    public void UpdateOpened()
+    {
+        InstantiateRecording();
+        ScrollToBottom();
+    }
+
     private void InstantiateRecording()
     {
         DestroyContentChildren();
@@ -47,7 +54,7 @@ public class InvestigatedPersonMenu : MonoBehaviour
             GameObject prefab = statement is AskedStatement ? Engine.AskedStatementPrefab : Engine.AnsweredStatementPrefab;
 
             GameObject gameObjectStatement = Instantiate(prefab, scrollAreaContent);
-            gameObjectStatement.GetComponent<GameObjectStatement>().InstantiatedInit(statement, person);
+            gameObjectStatement.GetComponent<GameObjectStatement>().InstantiatedInit(statement);
         }
     }
 
@@ -57,5 +64,10 @@ public class InvestigatedPersonMenu : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
+    }
+
+    private void ScrollToBottom()
+    {
+        scrollRect.normalizedPosition = new Vector2(0, 0);
     }
 }

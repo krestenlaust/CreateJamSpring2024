@@ -17,12 +17,12 @@ public class GameObjectStatement : MonoBehaviour
 
     Engine Engine => Engine.instance;
 
-    public void InstantiatedInit(Statement statement, Person person, bool crossReference = false)
+    public void InstantiatedInit(Statement statement, bool crossReference = false)
     {
         this.statement = statement;
         statementTMP.text = statement.statement.statement;
-        statementTMP.color = person.textColor;
-        backgroundImage.color = person.backgroundColor;
+        statementTMP.color = statement.statement.WhoSaidIt.textColor;
+        backgroundImage.color = statement.statement.WhoSaidIt.backgroundColor;
 
         if (crossReference) 
         {
