@@ -6,7 +6,7 @@ public class CreateInvestigateButtons : MonoBehaviour
 {
     [SerializeField] GameObject buttonPrefab;
 
-    [SerializeField, ReadOnly] List<CrossReferencePersonButton> buttons = new();
+    [SerializeField, ReadOnly] List<InvestigatePersonButton> buttons = new();
 
     Engine Engine => Engine.instance;
 
@@ -22,9 +22,9 @@ public class CreateInvestigateButtons : MonoBehaviour
         {
             GameObject button = Instantiate(buttonPrefab, transform);
 
-            CrossReferencePersonButton crossReferenceButton = button.GetComponent<CrossReferencePersonButton>();
-            crossReferenceButton.InstatiatedInit(person);
-            buttons.Add(crossReferenceButton);
+            InvestigatePersonButton investigationButton = button.GetComponent<InvestigatePersonButton>();
+            investigationButton.InstatiatedInit(person);
+            buttons.Add(investigationButton);
         }
     }
 
