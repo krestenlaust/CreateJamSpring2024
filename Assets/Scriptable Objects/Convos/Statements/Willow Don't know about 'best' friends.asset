@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: Persey I have not heard about that
+  m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
+  m_Name: Willow Don't know about 'best' friends
   m_EditorClassIdentifier: 
-  inputs:
-  - {fileID: 11400000, guid: 7b9a8d2db7cff6b4099f34d726085498, type: 2}
-  outputs:
-  - {fileID: 11400000, guid: 734c847f5b26d4b4caf779f71149802f, type: 2}
+  statement: I don't know if I would call them "the best", but yes, we are all friends.

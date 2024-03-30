@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: "Willow Bj\xF6rn bookclub convo"
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 11400000, guid: 5b66c2813fa983846a2634b28e070262, type: 2}
+  - {fileID: 11400000, guid: 950deaaded2b1344a897097d3d345778, type: 2}
   outputs:
   - {fileID: 11400000, guid: 0bc1e865af5868a48ae65de562c499ce, type: 2}
