@@ -40,6 +40,7 @@ public class Engine : MonoBehaviour
         if (MakeSingleton())
         {
             ApplyStartConvo();
+            minutesLeft = startingMinutes;
             UpdateTimer();
         }
     }
@@ -93,6 +94,6 @@ public class Engine : MonoBehaviour
 
     private void UpdateTimer()
     {
-        timerTMP.text = $"{HoursLeft}:{MinutesMinusHoursLeft}:00";
+        timerTMP.text = $"{HoursLeft}:{MinutesMinusHoursLeft}:0";
     }
 }
