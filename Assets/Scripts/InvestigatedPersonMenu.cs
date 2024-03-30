@@ -10,6 +10,7 @@ public class InvestigatedPersonMenu : MonoBehaviour
     [SerializeField] Image personNameBackgroundImage;
 
     [SerializeField] Image personAvatar;
+    [SerializeField] Image personBackground;
 
     [SerializeField] Transform scrollAreaContent;
 
@@ -27,6 +28,13 @@ public class InvestigatedPersonMenu : MonoBehaviour
         personNameBackgroundImage.color = person.backgroundColor;
 
         personAvatar.sprite = person.avatar;
+        personBackground.sprite = person.background;
+
+        personBackground.color = new Color(
+            personBackground.color.r,
+            personBackground.color.g,
+            personBackground.color.b,
+            personBackground.sprite == null ? 0 : 1);
 
         InstantiateRecording();
     }

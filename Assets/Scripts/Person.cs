@@ -8,6 +8,7 @@ public class Person : ScriptableObject
 {
     public new string name;
     public Sprite avatar;
+    public Sprite background;
     public Color textColor;
     public Color backgroundColor;
     public List<Convo> convos;
