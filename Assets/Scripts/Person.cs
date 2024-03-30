@@ -33,7 +33,7 @@ public class Person : ScriptableObject
 
         answerStatements = convo ? convo.outputs : new List<ScriptableStatement>() { GetRandomNoAnswerStatement() };
 
-        newInfoGained = AnyExistInRecording(answerStatements);
+        newInfoGained = AnyDoesNotExistInRecording(answerStatements);
 
         Record(asked, answerStatements);
 
@@ -64,7 +64,7 @@ public class Person : ScriptableObject
         return exists;
     }
 
-    public bool AnyDoesntExistInRecording(List<ScriptableStatement> statements)
+    public bool AnyDoesNotExistInRecording(List<ScriptableStatement> statements)
     {
         foreach (ScriptableStatement scriptableStatement in statements)
         {
