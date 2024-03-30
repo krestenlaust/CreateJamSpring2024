@@ -396,6 +396,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9089201098262821798, guid: 3de9f3678a796d44790ebe7142f5d3c3, type: 3}
+      propertyPath: m_ScrollSensitivity
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

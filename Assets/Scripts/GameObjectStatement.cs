@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GameObjectStatement : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI statementTMP;
+    [SerializeField] TextMeshProUGUI nameTMP;
     [SerializeField] Image backgroundImage;
 
     [SerializeField] Button button;
@@ -20,6 +21,10 @@ public class GameObjectStatement : MonoBehaviour
     public void InstantiatedInit(Statement statement, bool crossReference = false)
     {
         this.statement = statement;
+
+        nameTMP.text = statement.statement.WhoSaidIt.name + ":";
+        nameTMP.color = statement.statement.WhoSaidIt.textColor;
+
         statementTMP.text = statement.statement.statement;
         statementTMP.color = statement.statement.WhoSaidIt.textColor;
         backgroundImage.color = statement.statement.WhoSaidIt.backgroundColor;

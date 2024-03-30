@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 50
-    m_Bottom: 50
+    m_Top: 100
+    m_Bottom: 100
   m_ChildAlignment: 1
   m_Spacing: 20
   m_ChildForceExpandWidth: 1
@@ -509,6 +509,7 @@ MonoBehaviour:
   personNameBackgroundImage: {fileID: 3658107292143217101}
   personAvatar: {fileID: 3115364140467798957}
   personBackground: {fileID: 2124942435531283800}
+  scrollRect: {fileID: 0}
   scrollAreaContent: {fileID: 6755072917488703552}
   person: {fileID: 0}
 --- !u!1 &8211056474741843859
@@ -775,11 +776,11 @@ MonoBehaviour:
   m_Content: {fileID: 6755072917488703552}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 100
+  m_ScrollSensitivity: 40
   m_Viewport: {fileID: 3314195348409276289}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
