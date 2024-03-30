@@ -70,6 +70,13 @@ public class Engine : MonoBehaviour
         }
     }
 
+    public void SwapInvestigationAndCrossReference()
+    {
+        Person oldCrossReference = CrossReferencePerson;
+        OpenCrossReferenceConversation(InvestigatedPerson);
+        OpenInvestigateConversation(oldCrossReference);
+    }
+
     public void OpenInvestigateConversation(Person person)
     {
         investigatedPersonMenu.OpenMenu(person);
@@ -108,6 +115,6 @@ public class Engine : MonoBehaviour
 
     private void UpdateTimer()
     {
-        timerTMP.text = $"{HoursLeft}:{MinutesMinusHoursLeft}:0";
+        timerTMP.text = $"{HoursLeft:00}:{MinutesMinusHoursLeft:00}:00";
     }
 }

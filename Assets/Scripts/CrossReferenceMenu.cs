@@ -71,6 +71,6 @@ public class CrossReferenceMenu : MonoBehaviour
             return;
         }
 
-        createCrossReferenceButtons.UpdateButtons(person);
+        createCrossReferenceButtons.UpdateButtons();
     }
 }

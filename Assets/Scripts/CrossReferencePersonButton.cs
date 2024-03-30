@@ -24,14 +24,22 @@ public class CrossReferencePersonButton : MonoBehaviour
         personNameTMP.color = person.textColor;
         backgroundImage.color = person.backgroundColor;
 
-        button.onClick.AddListener(
-            () => Engine.OpenCrossReferenceConversation(person)
-            );
+        UpdateButton();
     }
 
-    public void UpdateButton(Person activePerson)
+    public void UpdateButton()
     {
-        button.interactable = true;
-        if (person == Engine.InvestigatedPerson) button.interactable = false;
+        if (person == Engine.InvestigatedPerson)
+        {
+            button.onClick.AddListener(
+                Engine.SwapInvestigationAndCrossReference    
+            );
+        }
+        else
+        {
+            button.onClick.AddListener(
+                () => Engine.OpenCrossReferenceConversation(person)
+            );
+        }
     }
 }
