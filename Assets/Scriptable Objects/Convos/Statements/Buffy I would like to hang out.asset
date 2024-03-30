@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Buffy I would like to hang out
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 2f8cd2488fa7fba4fadc850f5cfa6619, type: 2}
-  statement: I would love to hang out with my 2 best friends, but I really despise
-    reading.
+  statement: I would love to hang out with my 2 best friends in their club, but I
+    really despise reading.

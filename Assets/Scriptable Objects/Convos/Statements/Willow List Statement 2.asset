@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Willow List Statement 2
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 884e47c7900bba94abc55e9ed7f1a269, type: 2}
-  statement: I requested a specific book which Joanna was going to get for the bookclub.
+  statement: I requested a specific book which Joanna was going to get for our bookclub.

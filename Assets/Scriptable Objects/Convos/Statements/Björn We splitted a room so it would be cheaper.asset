@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
   m_Name: "Bj\xF6rn We splitted a room so it would be cheaper"
   m_EditorClassIdentifier: 
-  whoSaidIt: {fileID: 0}
-  statement: 
+  whoSaidIt: {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
+  statement: Yes, we bumped into each other at the tavern when I just had arrived
+    at town and I didn't have a place yet. We splitted a room so it would be cheaper.

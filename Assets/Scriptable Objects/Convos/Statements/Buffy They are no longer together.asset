@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Buffy They are no longer together
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 2f8cd2488fa7fba4fadc850f5cfa6619, type: 2}
-  statement: Yes, Percey and Joanna are no longer together. Percey and I are together
-    now.
+  statement: Yes, Percey and Joanna was once together, but now Percey and I have
+    been together for a good amount of time.

@@ -13,5 +13,4 @@ MonoBehaviour:
   m_Name: "Willow Bj\xF6rn is my brother"
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 884e47c7900bba94abc55e9ed7f1a269, type: 2}
-  statement: "Yes, Bj\xF6rn is my brother. He seems to have found his place in the
-    community."
+  statement: "Yes, Bj\xF6rn is my brother. He appears to get along well in the community."

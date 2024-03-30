@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: "Bj\xF6rn We have spoken recently"
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
-  statement: Yes, I have spoken with her a bit in the last couple of weeks.
+  statement: Yes, I have spoken with her a bit recently.

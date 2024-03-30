@@ -31,5 +31,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 387cf0c6575871145933f59e48cd6b09, type: 2}
   - {fileID: 11400000, guid: d11e1edc391272c4d8b81ed6bfdfa320, type: 2}
   noAnswerStatements:
-  - {fileID: 11400000, guid: c324f44f9d0e25c49866e108cbfe9696, type: 2}
+  - {fileID: 11400000, guid: f11d7356bf0a3c743ade085adda0cf4f, type: 2}
   startingConvo: {fileID: 11400000, guid: c1785c160ece17844b11ab16aa70d115, type: 2}

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: "Bj\xF6rn They have a bookclub I am joining"
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
-  statement: Willow and Joanna have a bookclub that I am about to join.
+  statement: Willow and Joanna have a bookclub that I am about to join, I just need
+    my library card.
