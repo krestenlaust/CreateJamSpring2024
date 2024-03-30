@@ -111,6 +111,7 @@ public class Engine : MonoBehaviour
 
         UpdateTimer();
         investigatedPersonMenu.UpdateOpened();
+        crossReferenceMenu.UpdateColorMultipliers();
     }
 
     private void UpdateTimer()
