@@ -1318,10 +1318,10 @@ MonoBehaviour:
   newInfoCostInMinutes: 5
   minutesLeft: 0
   people:
-  - {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
+  - {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
   - {fileID: 11400000, guid: 2f8cd2488fa7fba4fadc850f5cfa6619, type: 2}
   - {fileID: 11400000, guid: 884e47c7900bba94abc55e9ed7f1a269, type: 2}
-  - {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
+  - {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
   crossReferenceMenu: {fileID: 968830867}
   investigatedPersonMenu: {fileID: 429907284}
   askConfirmationMenu: {fileID: 357052029}
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8157164128673450638, guid: 81ddce713b8651744aa15a5c7f275ca6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -492.54453
+      value: -503.01254
       objectReference: {fileID: 0}
     - target: {fileID: 8217534946540146421, guid: 81ddce713b8651744aa15a5c7f275ca6, type: 3}
       propertyPath: m_AnchorMax.y
