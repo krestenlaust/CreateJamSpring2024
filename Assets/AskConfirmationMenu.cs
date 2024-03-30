@@ -26,6 +26,12 @@ public class AskConfirmationMenu : MonoBehaviour
         gameObject.SetActive(true);
 
         askButton.onClick.RemoveAllListeners();
-        askButton.onClick.AddListener(() => Engine.Ask(statement.Statement.statement));
+        askButton.onClick.AddListener(() => Ask(statement));
+    }
+
+    private void Ask(GameObjectStatement statement)
+    {
+        HideMenu();
+        Engine.Ask(statement.Statement.statement);
     }
 }

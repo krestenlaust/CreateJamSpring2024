@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Persey
   avatar: {fileID: -721165494326211163, guid: d38ba0fc2578baf4bacc40cb9c941482, type: 3}
+  background: {fileID: 0}
   textColor: {r: 0, g: 0.124679945, b: 0.46226418, a: 1}
   backgroundColor: {r: 0.23718406, g: 0.38264865, b: 0.7735849, a: 1}
-  convos: []
-  noAnswerStatements: []
+  convos:
+  - {fileID: 11400000, guid: 04b4d3be56786fa43934ea1757c0956e, type: 2}
+  - {fileID: 11400000, guid: 41b6495104d12a949b43b044e2cfbe0a, type: 2}
+  - {fileID: 11400000, guid: 8f198f75f6aa2d245879d25cf7aea196, type: 2}
+  - {fileID: 11400000, guid: e9837bd4ad22128479b2af7e84e9a6f3, type: 2}
+  - {fileID: 11400000, guid: abc41a44191e84b40950054eebe24224, type: 2}
+  - {fileID: 11400000, guid: 60a67e272fb79274eb11cf080ec4c5a1, type: 2}
+  - {fileID: 11400000, guid: 976d35f7eef70bc4f9d9afd19bf26253, type: 2}
+  - {fileID: 11400000, guid: 5ce3e1be30e92d049ad92b5bdface4cb, type: 2}
+  - {fileID: 11400000, guid: a6d3673b9e5d6bd4fba19f9987826b22, type: 2}
+  - {fileID: 11400000, guid: 316cae34db406e749981de8675728496, type: 2}
+  noAnswerStatements:
+  - {fileID: 11400000, guid: c324f44f9d0e25c49866e108cbfe9696, type: 2}
   startingConvo: {fileID: 11400000, guid: 8f198f75f6aa2d245879d25cf7aea196, type: 2}

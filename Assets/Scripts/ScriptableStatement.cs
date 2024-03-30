@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Statement", menuName = "ScriptableObjects/Statement", order = 1)]
 public class ScriptableStatement : ScriptableObject
 {
+    [SerializeField] Person whoSaidIt;
     [TextArea(10, 100)] public string statement;
 }
 

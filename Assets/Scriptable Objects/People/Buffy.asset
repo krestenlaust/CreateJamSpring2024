@@ -14,8 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Buffy
   avatar: {fileID: -7153429573562006373, guid: 4176c76b9d6850849b5f333ce11754a7, type: 3}
+  background: {fileID: 0}
   textColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.7924528, g: 0.1981132, b: 0.1981132, a: 1}
-  convos: []
-  noAnswerStatements: []
+  convos:
+  - {fileID: 11400000, guid: 376d7c7e16a5c61488c8ee37553ac7b7, type: 2}
+  - {fileID: 11400000, guid: 5980974184d05ad49bc3fe0d1e495ec2, type: 2}
+  - {fileID: 11400000, guid: 13114be485185724684403cc34812a8d, type: 2}
+  - {fileID: 11400000, guid: 3c6671ec7aeec5145a6ba94431999b0e, type: 2}
+  - {fileID: 11400000, guid: 04f5d85550ad31640b36946a21b11d46, type: 2}
+  - {fileID: 11400000, guid: 9b7fe8df91040ba4ca801b7727562cf9, type: 2}
+  - {fileID: 11400000, guid: 386d0a86509d20943a4c2eb00dd853b3, type: 2}
+  - {fileID: 11400000, guid: 9fc316d0e04f2c14980c13ae49765b04, type: 2}
+  - {fileID: 11400000, guid: e97d2ad343337104b9c70ed26fc09cad, type: 2}
+  - {fileID: 11400000, guid: 52ec867df360b45488363d88027d999a, type: 2}
+  - {fileID: 11400000, guid: d340be715fcaf15418ed30ddaf8f730a, type: 2}
+  - {fileID: 11400000, guid: c8653d0e63028ca489c9b95d13fc36df, type: 2}
+  - {fileID: 11400000, guid: 2c09160c37c76fb41aaabc3a5a2f7131, type: 2}
+  noAnswerStatements:
+  - {fileID: 11400000, guid: c324f44f9d0e25c49866e108cbfe9696, type: 2}
   startingConvo: {fileID: 11400000, guid: 04f5d85550ad31640b36946a21b11d46, type: 2}
