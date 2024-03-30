@@ -11,6 +11,8 @@ public class GameObjectStatement : MonoBehaviour
     [SerializeField] TextMeshProUGUI nameTMP;
     [SerializeField] Image backgroundImage;
 
+    [SerializeField] Color askedColor = Color.gray;
+
     [SerializeField] Button button;
 
     [SerializeField] Statement statement;
@@ -22,12 +24,18 @@ public class GameObjectStatement : MonoBehaviour
     {
         this.statement = statement;
 
+        Color colorMultiplier = new(1, 1, 1);
+        if (Engine.InvestigatedPerson.ExistsInRecording(statement.statement))
+        {
+            colorMultiplier = askedColor;
+        }
+
         nameTMP.text = statement.statement.WhoSaidIt.name + ":";
-        nameTMP.color = statement.statement.WhoSaidIt.textColor;
+        nameTMP.color = statement.statement.WhoSaidIt.textColor * colorMultiplier;
 
         statementTMP.text = statement.statement.statement;
-        statementTMP.color = statement.statement.WhoSaidIt.textColor;
-        backgroundImage.color = statement.statement.WhoSaidIt.backgroundColor;
+        statementTMP.color = statement.statement.WhoSaidIt.textColor * colorMultiplier;
+        backgroundImage.color = statement.statement.WhoSaidIt.backgroundColor * colorMultiplier;
 
         if (crossReference) 
         {

@@ -37,11 +37,11 @@ public class CreateCrossReferenceButtons : MonoBehaviour
         }
     }
 
-    public void UpdateButtons(Person activePerson)
+    public void UpdateButtons()
     {
         foreach (CrossReferencePersonButton button in buttons)
         {
-            button.UpdateButton(activePerson);
+            button.UpdateButton();
         }
     }
 }

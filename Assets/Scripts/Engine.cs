@@ -68,6 +68,13 @@ public class Engine : MonoBehaviour
         }
     }
 
+    public void SwapInvestigationAndCrossReference()
+    {
+        Person oldCrossReference = CrossReferencePerson;
+        OpenCrossReferenceConversation(InvestigatedPerson);
+        OpenInvestigateConversation(oldCrossReference);
+    }
+
     public void OpenInvestigateConversation(Person person)
     {
         investigatedPersonMenu.OpenMenu(person);

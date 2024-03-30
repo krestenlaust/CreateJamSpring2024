@@ -33,7 +33,7 @@ public class Person : ScriptableObject
 
         answerStatements = convo ? convo.outputs : new List<ScriptableStatement>() { GetRandomNoAnswerStatement() };
 
-        newInfoGained = CheckForNewInformation(answerStatements);
+        newInfoGained = AnyExistInRecording(answerStatements);
 
         Record(asked, answerStatements);
 
@@ -46,17 +46,40 @@ public class Person : ScriptableObject
         return noAnswerStatements[statementIndex];
     }
 
-    private bool CheckForNewInformation(List<ScriptableStatement> statements)
+    public bool AnyExistInRecording(List<ScriptableStatement> statements)
     {
         foreach (ScriptableStatement scriptableStatement in statements)
         {
-            bool contains = recording.Any(statement => statement.statement.statement == scriptableStatement.statement);
-            if (contains == false)
+            if (ExistsInRecording(scriptableStatement))
             {
                 return true;
             }
         }
         return false;
+    }
+
+    public bool ExistsInRecording(ScriptableStatement scriptableStatement)
+    {
+        bool exists = recording.Any(statement => statement.statement.statement == scriptableStatement.statement);
+        return exists;
+    }
+
+    public bool AnyDoesntExistInRecording(List<ScriptableStatement> statements)
+    {
+        foreach (ScriptableStatement scriptableStatement in statements)
+        {
+            if (DoesNotExistInRecording(scriptableStatement))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool DoesNotExistInRecording(ScriptableStatement scriptableStatement)
+    {
+        bool exists = recording.Any(statement => statement.statement.statement == scriptableStatement.statement);
+        return !exists;
     }
 
     private void Record(ScriptableStatement asked, List<ScriptableStatement> answered)
