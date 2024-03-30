@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
   m_Name: Persey Perhaps they were
   m_EditorClassIdentifier: 
+  whoSaidIt: {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
   statement: I don't know if I would call them "the best", but yes, we are all friends.

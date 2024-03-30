@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63b6251c92b2464083cb347f614b0d8, type: 3}
+  m_Name: Joanna
+  m_EditorClassIdentifier: 
+  name: Willow
+  avatar: {fileID: 5545978771003637547, guid: dcdc1da205fb8e044a427a297c364dab, type: 3}
+  background: {fileID: -3719163014518916081, guid: ca8a70d63c46da746bf1ab4cd2d00e79, type: 3}
+  textColor: {r: 0.30946234, g: 0, b: 0.41509432, a: 1}
+  backgroundColor: {r: 0.7015154, g: 0.3250267, b: 0.8301887, a: 1}
+  convos:
+  - {fileID: 11400000, guid: 19a905f62eb45db41b0b91253550e531, type: 2}
+  - {fileID: 11400000, guid: f7bbc073d2a5bbf409687c18697ca379, type: 2}
+  - {fileID: 11400000, guid: c6eb21a5f8df54646b4756ec1c68c7f6, type: 2}
+  - {fileID: 11400000, guid: 67cdb39e91be8bb48af5aba1c9590754, type: 2}
+  - {fileID: 11400000, guid: 10200fc244fcd7943a6b791f6f71822d, type: 2}
+  - {fileID: 11400000, guid: cdec9a1dcb87d0942bc8320445433a5e, type: 2}
+  - {fileID: 11400000, guid: c1785c160ece17844b11ab16aa70d115, type: 2}
+  - {fileID: 11400000, guid: a191431d9dd09dc468224bc960a2f5e0, type: 2}
+  - {fileID: 11400000, guid: 5c48b8bf76b67724893487cf05c6a724, type: 2}
+  - {fileID: 11400000, guid: 39514bb56b7073c4dbda593883da25b1, type: 2}
+  - {fileID: 11400000, guid: 387cf0c6575871145933f59e48cd6b09, type: 2}
+  - {fileID: 11400000, guid: d11e1edc391272c4d8b81ed6bfdfa320, type: 2}
+  noAnswerStatements:
+  - {fileID: 11400000, guid: c324f44f9d0e25c49866e108cbfe9696, type: 2}
+  startingConvo: {fileID: 11400000, guid: c1785c160ece17844b11ab16aa70d115, type: 2}

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
   m_Name: "Bj\xF6rn Yes 5 weeks"
   m_EditorClassIdentifier: 
+  whoSaidIt: {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
   statement: Yes, I moved here about five weeks ago.
