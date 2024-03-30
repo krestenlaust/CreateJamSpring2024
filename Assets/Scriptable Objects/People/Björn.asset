@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Bj\xF6rn"
   avatar: {fileID: 133982719826790466, guid: e1105af83c6dbec46a90c38267499381, type: 3}
+  textColor: {r: 0, g: 0.4811321, b: 0.09826004, a: 1}
+  backgroundColor: {r: 0.24870951, g: 0.764151, b: 0.35347405, a: 1}
   convos: []

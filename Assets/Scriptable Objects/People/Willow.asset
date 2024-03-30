@@ -10,6 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b63b6251c92b2464083cb347f614b0d8, type: 3}
-  m_Name: Iris
+  m_Name: Willow
   m_EditorClassIdentifier: 
-  name: Iris
+  name: Willow
+  avatar: {fileID: -7071575667073771214, guid: 7e03c6f7f1421884eb29114325e6edc3, type: 3}
+  textColor: {r: 0.30946234, g: 0, b: 0.41509432, a: 1}
+  backgroundColor: {r: 0.7015154, g: 0.3250267, b: 0.8301887, a: 1}
+  convos: []
