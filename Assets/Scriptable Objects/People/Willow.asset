@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Willow
   m_EditorClassIdentifier: 
   name: Willow
-  avatar: {fileID: -7071575667073771214, guid: 7e03c6f7f1421884eb29114325e6edc3, type: 3}
+  avatar: {fileID: 5545978771003637547, guid: dcdc1da205fb8e044a427a297c364dab, type: 3}
   background: {fileID: -3719163014518916081, guid: ca8a70d63c46da746bf1ab4cd2d00e79, type: 3}
   textColor: {r: 0.30946234, g: 0, b: 0.41509432, a: 1}
   backgroundColor: {r: 0.7015154, g: 0.3250267, b: 0.8301887, a: 1}
