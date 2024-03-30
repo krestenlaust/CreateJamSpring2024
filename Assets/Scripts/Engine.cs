@@ -40,6 +40,7 @@ public class Engine : MonoBehaviour
         if (MakeSingleton())
         {
             ApplyStartConvo();
+            UpdateTimer();
         }
     }
 

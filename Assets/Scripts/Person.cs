@@ -26,7 +26,7 @@ public class Person : ScriptableObject
         Record(startingConvo.inputs[0], startingConvo.outputs);
     }
 
-    public void AskStatement(ScriptableStatement asked, out bool newInfoGained)
+    public List<ScriptableStatement> AskStatement(ScriptableStatement asked, out bool newInfoGained)
     {
         List<ScriptableStatement> answerStatements;
         Convo convo = convos.Find(convo => convo.inputs.Any(statement => statement.statement == asked.statement));
@@ -36,6 +36,8 @@ public class Person : ScriptableObject
         newInfoGained = CheckForNewInformation(answerStatements);
 
         Record(asked, answerStatements);
+
+        return answerStatements;
     }
 
     public ScriptableStatement GetRandomNoAnswerStatement()
