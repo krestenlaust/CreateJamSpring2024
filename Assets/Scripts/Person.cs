@@ -14,8 +14,16 @@ public class Person : ScriptableObject
 
     public List<ScriptableStatement> noAnswerStatements = new();
 
-    [ReadOnly] List<Statement> recording = new();
+    [SerializeField] Convo startingConvo;
+
+    [SerializeField, ReadOnly] List<Statement> recording = new();
     public List<Statement> Recoroding => recording;
+
+    public void ApplyStartingConvos()
+    {
+        recording.Clear();
+        Record(startingConvo.inputs[0], startingConvo.outputs);
+    }
 
     public List<ScriptableStatement> AskStatement(ScriptableStatement asked)
     {

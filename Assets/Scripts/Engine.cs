@@ -27,7 +27,7 @@ public class Engine : MonoBehaviour
     {
         if (MakeSingleton())
         {
-
+            ApplyStartConvo();
         }
     }
 
@@ -41,6 +41,14 @@ public class Engine : MonoBehaviour
 
         instance = this;
         return true;
+    }
+
+    private void ApplyStartConvo()
+    {
+        foreach (Person person in people)
+        {
+            person.ApplyStartingConvos();
+        }
     }
 
     public void OpenInvestigateConversation(Person person)

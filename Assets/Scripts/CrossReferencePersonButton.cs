@@ -33,10 +33,5 @@ public class CrossReferencePersonButton : MonoBehaviour
     {
         button.interactable = true;
         if (person == Engine.InvestigatedPerson) button.interactable = false;
-
-        else if (Engine.InvestigatedPerson == person && activePerson == person)
-        {
-            Engine.OpenFirstAvailableCrossReference();
-        }
     }
 }
