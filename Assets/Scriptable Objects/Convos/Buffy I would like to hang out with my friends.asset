@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: Persey I have not heard about that
+  m_Name: Buffy I would like to hang out with my friends
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 11400000, guid: 7b9a8d2db7cff6b4099f34d726085498, type: 2}
+  - {fileID: 11400000, guid: 6c5df937ce1517c43a7fe80f95fb3d99, type: 2}
   outputs:
-  - {fileID: 11400000, guid: 734c847f5b26d4b4caf779f71149802f, type: 2}
+  - {fileID: 11400000, guid: 3cd9dde5dae4f8e489b8f84e5b3bf3b3, type: 2}
