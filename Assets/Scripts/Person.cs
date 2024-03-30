@@ -26,22 +26,35 @@ public class Person : ScriptableObject
         Record(startingConvo.inputs[0], startingConvo.outputs);
     }
 
-    public List<ScriptableStatement> AskStatement(ScriptableStatement asked)
+    public void AskStatement(ScriptableStatement asked, out bool newInfoGained)
     {
         List<ScriptableStatement> answerStatements;
         Convo convo = convos.Find(convo => convo.inputs.Any(statement => statement.statement == asked.statement));
 
         answerStatements = convo ? convo.outputs : new List<ScriptableStatement>() { GetRandomNoAnswerStatement() };
 
-        Record(asked, answerStatements);
+        newInfoGained = CheckForNewInformation(answerStatements);
 
-        return answerStatements;
+        Record(asked, answerStatements);
     }
 
     public ScriptableStatement GetRandomNoAnswerStatement()
     {
         int statementIndex = Random.Range(0, noAnswerStatements.Count - 1);
         return noAnswerStatements[statementIndex];
+    }
+
+    private bool CheckForNewInformation(List<ScriptableStatement> statements)
+    {
+        foreach (ScriptableStatement scriptableStatement in statements)
+        {
+            bool contains = recording.Any(statement => statement.statement.statement == scriptableStatement.statement);
+            if (contains == false)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void Record(ScriptableStatement asked, List<ScriptableStatement> answered)

@@ -2,11 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using UnityEngine;
 
 public class Engine : MonoBehaviour
 {
     public static Engine instance;
+
+    [SerializeField] int startingMinutes;
+    [SerializeField] int newInfoCostInMinutes;
+
+    [SerializeField, ReadOnly] int minutesLeft;
+    public int HoursLeft => Mathf.FloorToInt(minutesLeft / 60f);
+    public int MinutesMinusHoursLeft => minutesLeft % 60;
 
     [SerializeField] List<Person> people;
     public List<Person> People => people;
@@ -24,6 +32,8 @@ public class Engine : MonoBehaviour
     public GameObject AskedStatementPrefab => askedStatementPrefab;
     [SerializeField] GameObject answeredStatementPrefab;
     public GameObject AnsweredStatementPrefab => answeredStatementPrefab;
+
+    [SerializeField] TextMeshProUGUI timerTMP;
 
     private void Awake()
     {
@@ -70,6 +80,18 @@ public class Engine : MonoBehaviour
 
     public void Ask(ScriptableStatement statement)
     {
-        InvestigatedPerson.AskStatement(statement);
+        InvestigatedPerson.AskStatement(statement, out bool newInfoGained);
+        
+        if (newInfoGained)
+        {
+            minutesLeft -= newInfoCostInMinutes;
+        }
+
+        UpdateTimer();
+    }
+
+    private void UpdateTimer()
+    {
+        timerTMP.text = $"{HoursLeft}:{MinutesMinusHoursLeft}:00";
     }
 }
