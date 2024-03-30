@@ -7,6 +7,8 @@ public class CreateCrossReferenceButtons : MonoBehaviour
 {
     [SerializeField] GameObject buttonPrefab;
 
+    [SerializeField, ReadOnly] List<CrossReferencePersonButton> buttons = new();
+
     Engine Engine => Engine.instance;
 
     private void Start()
@@ -15,7 +17,7 @@ public class CreateCrossReferenceButtons : MonoBehaviour
     }
 
     private void CreateButtons()
-    {
+    {       
         DestroyChildren();
         foreach (Person person in Engine.People)
         {
@@ -23,6 +25,7 @@ public class CreateCrossReferenceButtons : MonoBehaviour
 
             CrossReferencePersonButton crossReferenceButton = button.GetComponent<CrossReferencePersonButton>();
             crossReferenceButton.InstatiatedInit(person);
+            buttons.Add(crossReferenceButton);
         }
     }
 
@@ -31,6 +34,14 @@ public class CreateCrossReferenceButtons : MonoBehaviour
         foreach (Transform child in transform)
         {
             Destroy(child.gameObject);
+        }
+    }
+
+    public void UpdateButtons(Person activePerson)
+    {
+        foreach (CrossReferencePersonButton button in buttons)
+        {
+            button.UpdateButton(activePerson);
         }
     }
 }

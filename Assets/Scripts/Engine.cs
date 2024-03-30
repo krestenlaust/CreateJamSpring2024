@@ -11,11 +11,12 @@ public class Engine : MonoBehaviour
     [SerializeField] List<Person> people;
     public List<Person> People => people;
 
-    [SerializeField] Person investigatedPerson;
-    public Person InvestigatedPerson => investigatedPerson;
+    public Person InvestigatedPerson => investigatedPersonMenu.InvestigatedPerson;
 
-    [SerializeField] GameObject crossReferenceMenu;
-    //public Person CrossReferencePerson => crossReferenceMenu.Person;
+    [SerializeField] CrossReferenceMenu crossReferenceMenu;
+    public Person CrossReferencePerson => crossReferenceMenu.Person;
+
+    [SerializeField] InvestigatedPersonMenu investigatedPersonMenu;
 
     private void Awake()
     {
@@ -37,8 +38,9 @@ public class Engine : MonoBehaviour
         return true;
     }
 
-    public void OpenCrossReferenceConversation(Person person)
-    {
-        //crossReferenceMenu.Open(person);
-    }
+    public void OpenInvestigateConversation(Person person) =>
+        investigatedPersonMenu.OpenMenu(person);
+
+    public void OpenCrossReferenceConversation(Person person) => 
+        crossReferenceMenu.OpenMenu(person);
 }

@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CrossReferenceMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] CreateCrossReferenceButtons createCrossReferenceButtons;
+    [SerializeField] Transform scrollAreaContent;
+
+    [SerializeField, ReadOnly] Person person;
+    public Person Person => person;
+
+    public void OpenMenu(Person personToOpenWith)
     {
-        
+        person = personToOpenWith;
+
+        InstantiateRecording();
+
+        createCrossReferenceButtons.UpdateButtons(person);
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void InstantiateRecording()
     {
-        
+        foreach (Statement item in person.Recoroding)
+        {
+
+        }
     }
 }

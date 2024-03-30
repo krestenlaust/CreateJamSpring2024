@@ -20,8 +20,6 @@ public class CrossReferencePersonButton : MonoBehaviour
     {
         person = personForButton;
 
-        if (person == Engine.InvestigatedPerson) button.interactable = false;
-
         personNameTMP.text = person.name;
         personNameTMP.color = person.textColor;
         backgroundImage.color = person.backgroundColor;
@@ -29,5 +27,16 @@ public class CrossReferencePersonButton : MonoBehaviour
         button.onClick.AddListener(
             () => Engine.OpenCrossReferenceConversation(person)
             );
+    }
+
+    public void UpdateButton(Person activePerson)
+    {
+        button.interactable = true;
+        if (person == Engine.InvestigatedPerson) button.interactable = false;
+
+        else if (person == activePerson)
+        {
+            
+        }
     }
 }
