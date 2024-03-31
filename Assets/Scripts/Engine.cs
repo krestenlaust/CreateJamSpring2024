@@ -94,7 +94,7 @@ public class Engine : MonoBehaviour
 	{
         if (CrossReferencePerson != null)
         {
-			middleTextTMP.text = $"Ask <color=#{ColorUtility.ToHtmlStringRGBA(InvestigatedPerson.backgroundColor)}>{InvestigatedPerson.name}</color> about <color=#{ColorUtility.ToHtmlStringRGBA(CrossReferencePerson.backgroundColor)}>{CrossReferencePerson.name}'s</color> statements.";
+			middleTextTMP.text = $"Asking <color=#{ColorUtility.ToHtmlStringRGBA(InvestigatedPerson.backgroundColor)}>{InvestigatedPerson.name}</color> about <color=#{ColorUtility.ToHtmlStringRGBA(CrossReferencePerson.backgroundColor)}>{CrossReferencePerson.name}'s</color> statements.";
 		}
 	}
 
