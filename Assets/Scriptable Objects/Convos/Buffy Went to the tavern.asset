@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Buffy Went to the tavern
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 30898080b8553634583527c52c85c794, type: 2}
   outputs:
   - {fileID: 11400000, guid: 0452f515d81a6db47be05fe1bf1e342e, type: 2}
