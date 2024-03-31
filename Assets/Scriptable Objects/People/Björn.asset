@@ -27,6 +27,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 92fbc676f62df754c837fd0468b41a7f, type: 2}
   - {fileID: 11400000, guid: 74bda9fb0d224114baa7f1ed72678fb0, type: 2}
   - {fileID: 11400000, guid: 32e809c4eca9b834db4b0383352032fa, type: 2}
+  - {fileID: 11400000, guid: c03f4947dee0d7044a2c193544890bd0, type: 2}
+  - {fileID: 11400000, guid: a1bfbfbb39c23a64d8caee366605fe90, type: 2}
+  - {fileID: 11400000, guid: 57b49bc4f62b62844931a3583d12b95a, type: 2}
+  - {fileID: 11400000, guid: fc0e863f05dcdb74b87b2b225c07295c, type: 2}
   noAnswerStatements:
   - {fileID: 11400000, guid: c324f44f9d0e25c49866e108cbfe9696, type: 2}
   startingConvo: {fileID: 11400000, guid: dc9fbec40dc0bc747b50900222f58cc1, type: 2}

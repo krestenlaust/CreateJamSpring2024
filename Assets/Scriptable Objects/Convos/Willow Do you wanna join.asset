@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: "Bj\xF6rn We splitted a room"
+  m_Name: Willow Do you wanna join
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 11400000, guid: db34fcddd727cff4189e8c49e77a14c5, type: 2}
-  - {fileID: 11400000, guid: 0452f515d81a6db47be05fe1bf1e342e, type: 2}
-  - {fileID: 11400000, guid: 30898080b8553634583527c52c85c794, type: 2}
+  - {fileID: 11400000, guid: ce166e39e3385e74caa76d6e2e26894e, type: 2}
   outputs:
-  - {fileID: 11400000, guid: 90de09ac11c2b0d479db0ecf4cedf547, type: 2}
+  - {fileID: 11400000, guid: c2cf79fda15384143883263a79c53b99, type: 2}

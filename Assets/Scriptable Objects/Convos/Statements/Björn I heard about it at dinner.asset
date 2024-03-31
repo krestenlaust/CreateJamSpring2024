@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: Buffy Went to the tavern
+  m_Script: {fileID: 11500000, guid: 797c5d1669cff6a4fa27b0c0c99ca8de, type: 3}
+  m_Name: "Bj\xF6rn I heard about it at dinner"
   m_EditorClassIdentifier: 
-  inputs:
-  - {fileID: 11400000, guid: 30898080b8553634583527c52c85c794, type: 2}
-  outputs:
-  - {fileID: 11400000, guid: 0452f515d81a6db47be05fe1bf1e342e, type: 2}
+  whoSaidIt: {fileID: 11400000, guid: 3e50540523f2c604eb618d73e084d7a3, type: 2}
+  statement: I heard about it at the dinner.
