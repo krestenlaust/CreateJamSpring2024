@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using TMPro;
 using UnityEngine;
 
@@ -81,7 +82,8 @@ public class Engine : MonoBehaviour
     {
         investigatedPersonMenu.OpenMenu(person);
         crossReferenceMenu.UpdateButtons();
-    }
+		FixNamesInMiddleBoxyThing();
+	}
 
 	public void OpenCrossReferenceConversation(Person person)
 	{
@@ -91,7 +93,10 @@ public class Engine : MonoBehaviour
 
 	private void FixNamesInMiddleBoxyThing()
 	{
-        middleTextTMP.text = $"Ask {InvestigatedPerson.name} about {CrossReferencePerson.name}'s statements.";
+        if (CrossReferencePerson != null)
+        {
+			middleTextTMP.text = $"Ask <color=#{ColorUtility.ToHtmlStringRGBA(InvestigatedPerson.backgroundColor)}>{InvestigatedPerson.name}</color> about <color=#{ColorUtility.ToHtmlStringRGBA(CrossReferencePerson.backgroundColor)}>{CrossReferencePerson.name}'s</color> statements.";
+		}
 	}
 
 	public void OpenFirstAvailableCrossReference() =>
