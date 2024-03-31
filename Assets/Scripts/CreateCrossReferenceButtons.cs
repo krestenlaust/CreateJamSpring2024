@@ -36,12 +36,4 @@ public class CreateCrossReferenceButtons : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
-
-    public void UpdateButtons()
-    {
-        foreach (CrossReferencePersonButton button in buttons)
-        {
-            button.UpdateButton();
-        }
-    }
 }

@@ -28,9 +28,7 @@ public class CrossReferenceMenu : MonoBehaviour
         personNameTMP.color = person.textColor;
         personNameBackgroundImage.color = person.backgroundColor;
 
-        InstantiateRecording();
-
-        UpdateButtons();
+        InstantiateRecording();        
     }
 
     private void InstantiateRecording()
@@ -76,14 +74,12 @@ public class CrossReferenceMenu : MonoBehaviour
         }
     }
 
-    public void UpdateButtons()
+    public void InvestigationMenuOpened(bool swap)
     {
-        if (Engine.InvestigatedPerson == person)
+        if (!swap && Engine.InvestigatedPerson == person)
         {
             Engine.OpenFirstAvailableCrossReference();
             return;
         }
-
-        createCrossReferenceButtons.UpdateButtons();
     }
 }

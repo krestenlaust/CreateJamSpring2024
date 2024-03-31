@@ -72,15 +72,15 @@ public class Engine : MonoBehaviour
 
     public void SwapInvestigationAndCrossReference()
     {
-        Person oldCrossReference = CrossReferencePerson;
-        OpenCrossReferenceConversation(InvestigatedPerson);
-        OpenInvestigateConversation(oldCrossReference);
+        Person oldInvestigatedPerson = InvestigatedPerson;
+        OpenInvestigateConversation(CrossReferencePerson, swap: true);
+        OpenCrossReferenceConversation(oldInvestigatedPerson);
     }
 
-    public void OpenInvestigateConversation(Person person)
+    public void OpenInvestigateConversation(Person person, bool swap = false)
     {
         investigatedPersonMenu.OpenMenu(person);
-        crossReferenceMenu.UpdateButtons();
+        crossReferenceMenu.InvestigationMenuOpened(swap);
     }
 
 	public void OpenCrossReferenceConversation(Person person)
