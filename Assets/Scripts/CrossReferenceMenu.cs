@@ -24,7 +24,7 @@ public class CrossReferenceMenu : MonoBehaviour
     {
         person = personToOpenWith;
 
-        personNameTMP.text = person.name;
+        personNameTMP.text = $"{person.name}'s";
         personNameTMP.color = person.textColor;
         personNameBackgroundImage.color = person.backgroundColor;
 
