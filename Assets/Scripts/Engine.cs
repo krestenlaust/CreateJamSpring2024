@@ -38,6 +38,8 @@ public class Engine : MonoBehaviour
 
 	[SerializeField] TextMeshProUGUI middleTextTMP;
 
+    [SerializeField] NoMoreTimeMenu noMoreTimeMenu;
+
 	private void Awake()
     {
         if (MakeSingleton())
@@ -101,8 +103,13 @@ public class Engine : MonoBehaviour
 	public void OpenFirstAvailableCrossReference() =>
         crossReferenceMenu.OpenOnFirstAvailable();
 
-    public void CrossReferenceStatementClicked(GameObjectStatement statement) => 
-        askConfirmationMenu.OpenMenu(statement);
+    public void CrossReferenceStatementClicked(GameObjectStatement statement)
+    {
+        if (minutesLeft > 0)
+        {
+            askConfirmationMenu.OpenMenu(statement);
+        }
+    }
 
     public void Ask(ScriptableStatement statement)
     {
@@ -121,5 +128,10 @@ public class Engine : MonoBehaviour
     private void UpdateTimer()
     {
         timerTMP.text = $"{HoursLeft:00}:{MinutesMinusHoursLeft:00}:00";
+    }
+
+    public void Guess()
+    {
+        noMoreTimeMenu.OpenMenu(timeLeft: minutesLeft > 0);
     }
 }
