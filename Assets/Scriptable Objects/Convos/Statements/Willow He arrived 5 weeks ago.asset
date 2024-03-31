@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Willow He arrived 5 weeks ago
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 884e47c7900bba94abc55e9ed7f1a269, type: 2}
-  statement: Yes, he arrived to town about little while ago.
+  statement: Yes, he arrived to town a little time ago.

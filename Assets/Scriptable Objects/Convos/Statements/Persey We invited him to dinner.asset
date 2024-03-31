@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Persey We invited him to dinner
   m_EditorClassIdentifier: 
   whoSaidIt: {fileID: 11400000, guid: 506a819a4c37c7a4fa9844967d1fe45e, type: 2}
-  statement: "We invited Bj\xF6rn and Willow to dinner when he moved here."
+  statement: "Buffy and I invited Bj\xF6rn and Willow to dinner when he moved here."
