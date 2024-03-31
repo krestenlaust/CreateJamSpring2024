@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Joanna
   m_EditorClassIdentifier: 
   name: Joanna
-  avatar: {fileID: 0}
+  avatar: {fileID: 268102603236923969, guid: 7bf4b596d3d26ef4c88a8902b2c91bc4, type: 3}
   background: {fileID: 0}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}

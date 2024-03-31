@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Buffy
   m_EditorClassIdentifier: 
   name: Buffy
-  avatar: {fileID: -7153429573562006373, guid: 4176c76b9d6850849b5f333ce11754a7, type: 3}
+  avatar: {fileID: -9022156454693667347, guid: c51b71099d6555f4484d945a43b91170, type: 3}
   background: {fileID: 0}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.7924528, g: 0.1981132, b: 0.1981132, a: 1}

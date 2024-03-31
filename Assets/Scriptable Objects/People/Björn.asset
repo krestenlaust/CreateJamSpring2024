@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "Bj\xF6rn"
   m_EditorClassIdentifier: 
   name: "Bj\xF6rn"
-  avatar: {fileID: 133982719826790466, guid: e1105af83c6dbec46a90c38267499381, type: 3}
+  avatar: {fileID: 7500535915621436652, guid: 592926ee010924845b37f495c26253a3, type: 3}
   background: {fileID: 0}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   backgroundColor: {r: 0.24870951, g: 0.764151, b: 0.35347405, a: 1}
