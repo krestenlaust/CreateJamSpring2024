@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Buffy Interesting
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 11400000, guid: 4ebca2a31f9a6884abad23d1d674d8c4, type: 2}
+  - {fileID: 11400000, guid: c89de82e3f2f6ef42bcfdacbf4c3e82d, type: 2}
   outputs:
-  - {fileID: 11400000, guid: abe73a13b71bab645bcc9257fbb22662, type: 2}
+  - {fileID: 11400000, guid: 07b1d22fe3dda6446ac04808a199c4c1, type: 2}
