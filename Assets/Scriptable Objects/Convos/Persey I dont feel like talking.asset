@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
+  m_Name: Persey I dont feel like talking
+  m_EditorClassIdentifier: 
+  inputs:
+  - {fileID: 11400000, guid: 3141b3f087a5af848be67b55462507e2, type: 2}
+  - {fileID: 11400000, guid: f33d1e5d1a318f140af151a57d784932, type: 2}
+  - {fileID: 11400000, guid: e7dabc74c07fea64d867d0ca849cd995, type: 2}
+  - {fileID: 11400000, guid: 3c599d5b703cde641b22c39a0d6355cc, type: 2}
+  outputs:
+  - {fileID: 11400000, guid: f8e36b14b46b0474e99abb45e5284079, type: 2}

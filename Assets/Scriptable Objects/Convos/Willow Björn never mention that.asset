@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fce470f5ef27745ba30bd8289e5194, type: 3}
-  m_Name: "Bj\xF6rn Affair"
+  m_Name: "Willow Bj\xF6rn never mention that"
   m_EditorClassIdentifier: 
   inputs:
-  - {fileID: 11400000, guid: d26754cbd9de5804a834c5a224a626d8, type: 2}
-  - {fileID: 11400000, guid: f3fa6388b8ea485469c7354fdbe28a81, type: 2}
   - {fileID: 11400000, guid: f63393f2fd21e544b8a1cd4c39f6d735, type: 2}
-  - {fileID: 11400000, guid: 3b84e67204b8d21499552eca47262b64, type: 2}
   outputs:
-  - {fileID: 11400000, guid: 0904e4a9842d7fe4188f51c839a7f0c1, type: 2}
+  - {fileID: 11400000, guid: 3b84e67204b8d21499552eca47262b64, type: 2}
