@@ -93,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5550345155201982171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -701,7 +701,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Who killed Joanna?
+  m_text: 'Who killed Joanna?
+
+    What motive could they have?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae6b4e082dc6b5c46b1c5fd54bcc763f, type: 2}
   m_sharedMaterial: {fileID: -4793528733013212780, guid: ae6b4e082dc6b5c46b1c5fd54bcc763f, type: 2}
@@ -728,7 +730,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.35
+  m_fontSize: 26.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1197,7 +1199,8 @@ MonoBehaviour:
     <color=black>Joanna</color> eventually finds out, through talking to <color=green>Bj\xF6rn</color>
     during book club that he and <color=red>Buffy</color> had said affair. But deep
     down <color=red>Buffy</color> still loves her current boyfriend and end up killing
-    <color=black>Joanna</color> to keep her from breaking up the two of them."
+    <color=black>Joanna</color> to keep her from breaking up the two of them, which
+    <color=black>Joanna</color> wanted to, in order to get back with <color=blue>Persey</color>. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae6b4e082dc6b5c46b1c5fd54bcc763f, type: 2}
   m_sharedMaterial: {fileID: -4793528733013212780, guid: ae6b4e082dc6b5c46b1c5fd54bcc763f, type: 2}
@@ -1224,8 +1227,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1809,7 +1812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3406220779755333930}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9202088866010844135}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4905226523175797919
 GameObject:
   m_ObjectHideFlags: 0

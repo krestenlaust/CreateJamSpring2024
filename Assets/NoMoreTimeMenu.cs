@@ -20,13 +20,12 @@ public class NoMoreTimeMenu : MonoBehaviour
         if (timeLeft == false)
         {
             noMoreTimeTMP.gameObject.SetActive(true);
-            closeButton.gameObject.SetActive(false);
         }
     }
 
     public void CorrectGuess()
     {
-        correct.SetActive(false);
+        correct.SetActive(true);
     }
 
     public void WrongGuess()
